@@ -1,0 +1,63 @@
+*{
+	font-family: Helvetica;
+}
+body {
+	margin: 0;
+	color: #000;
+	background-color: #fff;
+}
+#introduction{
+	color: #000;
+	font-size: 13px;
+	font-weight: 300;
+	z-index: 99;
+	margin: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#introduction a{
+	font-size: 11px;
+	margin: 5px 0;
+	display: block;
+	color: #000;
+}
+
+/* Dark Mode */
+.darkmode--activated #introduction{
+  color: #fff;
+}
+
+.darkmode--activated #introduction a{
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+ body {
+ 	color: #fff;
+ 	background-color: #000;
+ }
+
+ #introduction{
+ 	color: #fff;
+ }
+
+ #introduction a{
+ 	color: #fff;
+ }
+}
+
+@media (prefers-color-scheme: light) {
+ body {
+ 	color: #000;
+ 	background-color: #fff;
+ }
+
+ #introduction{
+ 	color: #000;
+ }
+
+ #introduction a{
+ 	color: #000;
+ }
+}
